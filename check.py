@@ -9,13 +9,14 @@ from typing import List, Optional
 import aiohttp
 import feedparser
 from urllib.parse import urlparse
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
-# load_dotenv()
-YC_FOLDER_ID = "b1gco55q3lsml89erp6k"
-YC_IAM_TOKEN = "AQVNxX-8Z2K5o6iQX82hRashxfHm6LCQn41gGA5M"
-GOOGLE_API_KEY = "AIzaSyA5hSRir0KG9eRqVp67ENSgWaEehvHWMs8"
-SEARCH_ENGINE_ID = "f008fcde4857c4450"
+load_dotenv()
+
+YC_FOLDER_ID = os.getenv("YC_FOLDER_ID")
+YC_IAM_TOKEN = os.getenv("YC_IAM_TOKEN")
+SEARCH_ENGINE_ID = os.getenv("SEARCH_ENGINE_ID")
+GOOGLE_API_KEY = os.getenv("SEARCH_ENGINE_ID")
 
 app = FastAPI()
 session = aiohttp.ClientSession()
