@@ -1,0 +1,12 @@
+version: '3.13.1'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    
+    # Если необходимо, можете указать переменные окружения
+    # environment:
+    #  - SOME_ENV_VAR=some_value
