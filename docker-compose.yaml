@@ -6,7 +6,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
-    
-    # Если необходимо, можете указать переменные окружения
-    # environment:
-    #  - SOME_ENV_VAR=some_value
+    environment:
+     - YC_FOLDER_ID=b1gco55q3lsml89erp6k
+     - YC_IAM_TOKEN=AQVNxX-8Z2K5o6iQX82hRashxfHm6LCQn41gGA5M
+     - GOOGLE_API_KEY=AIzaSyA5hSRir0KG9eRqVp67ENSgWaEehvHWMs8
+     - SEARCH_ENGINE_ID=f008fcde4857c4450
